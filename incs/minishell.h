@@ -6,7 +6,7 @@
 /*   By: nlegrand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 12:01:59 by nlegrand          #+#    #+#             */
-/*   Updated: 2023/02/12 07:10:09 by nlegrand         ###   ########.fr       */
+/*   Updated: 2023/02/12 09:26:13 by nlegrand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include "libft.h"
 # include <stdio.h>
 # include <signal.h>
+# include <unistd.h>
 //# include <readline/readline.h>
 //# include <readline/history.h>
 
