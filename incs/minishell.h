@@ -6,7 +6,7 @@
 /*   By: nlegrand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 12:01:59 by nlegrand          #+#    #+#             */
-/*   Updated: 2023/01/30 13:57:38 by nlegrand         ###   ########.fr       */
+/*   Updated: 2023/02/12 07:10:09 by nlegrand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,28 @@
 
 # include "libft.h"
 # include <stdio.h>
-# include <readline/readline.h>
-# include <readline/history.h>
+# include <signal.h>
+//# include <readline/readline.h>
+//# include <readline/history.h>
 
-# define MSH_PROMPT "minishell>"
+# define MSH_PROMPT "minishell> " // lame... make it better
+
+typedef struct s_msh		t_msh;
+//typedef struct s_cmdline	t_cmdline;
+//struct s_cmdline
+//{
+//	char	*line;
+//}
+struct s_msh
+{
+	int		pid;
+	char	*cmdline; // might need struct later
+};
+
+// setup.c
+void	msh_setup(t_msh	*msh);
+
+// utils.c
+void	msh_terminate(t_msh *msh);
 
 #endif
